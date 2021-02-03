@@ -2,6 +2,7 @@
     <div 
         class="item-panel__paranja"
         v-if="modalVisible"
+        @keydown.esc.stop="close"
     >
         <div
             class="item-panel__container"
