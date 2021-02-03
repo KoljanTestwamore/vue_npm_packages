@@ -1,7 +1,7 @@
 <template>
     <div
         class="pages"
-        v-if="pageList.length > 0"
+        v-if="pageList.length > 1"
     >
         <span
             class="pages__page"
@@ -64,6 +64,9 @@ export default {
 
 <style lang="scss" scoped>
 .pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     &__page {
         padding: 4px;
         cursor: pointer;

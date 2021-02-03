@@ -102,13 +102,15 @@ export default {
     display: flex;
     flex-direction: row;
     padding: 20px 0;
+    justify-content: center;
+    width: 400px;
 
     &__input {
         border: 0;
         border-bottom: 2px solid #000;
-        margin-right: 10px;
+        margin-right: 20px;
         outline: none;
-        width: 200px;
+        width: 350px;
     }
 
     &__submit-button {
@@ -119,6 +121,14 @@ export default {
         border: 2px solid #000;
         cursor: pointer;
     }
-}
 
+    @media screen 
+        and (max-width:480px) {
+          width: 100%;
+
+          &__input {
+              width: 80%;
+        }
+    }
+}
 </style>

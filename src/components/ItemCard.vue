@@ -98,6 +98,11 @@ export default {
         margin-left: 3px;
         margin-top: 5px;
     }
+
+    @media screen 
+        and (max-width:480px) {
+          width: 100%;
+    }
 }
 
 </style>
